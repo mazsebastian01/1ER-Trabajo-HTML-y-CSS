@@ -1,0 +1,19 @@
+body{
+    background-color:grey
+}
+#redirect:hover{
+    text-decoration: none;
+    color: red;
+}
+#Aguila{
+    display: block;
+    margin-left: 500px;
+}
+#caballo{
+    display: block;
+    margin-left: 500px;
+}
+#Buho{
+    display: block;
+    margin-left: 500px;
+}
