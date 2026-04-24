@@ -1,40 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Sebastián Maz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d487ab155e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<header>
-    Sebastian Maz
-    <nav> 
-     <a href="#Sobremi">Sobre mi</a>
-     <a href="mascotas.html">Mascotas</a>
+  <header>
+    <nav id="navbar">
+      <div class="logo">Sebastián <span>Maz</span></div>
+      <ul class="nav-links">
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Proyectos">Proyectos</a></li>
+        <li><a href="../portafolio/mascotas.html">Mis mascotas</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
-</header>
-<section>
-    <h3 id="Sobremi">Sobre mi</h3>
-    <p>Desarrollador de software versátil con dominio en múltiples lenguajes (ej. Python, JavaScript, Java) y enfoque en crear soluciones escalables, eficientes y seguras. Experto en backend/frontend, enfocado en resolver problemas complejos, mejorar el rendimiento y aplicar las mejores prácticas de codificación.</p>
+  </header>
+
+  <main>
+
+    <section id="Inicio" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-tag"> Hola, soy</p>
+          <h1>Sebastián Maz</h1>
+          <h2>Developer Junior</h2>
+          <p class="hero-description">Apasionado por crear experiencias web únicas y funcionales.</p>
+          <div class="hero-actions">
+            <a href="#Proyectos" class="btn">Ver proyectos</a>
+            <a href="#Contacto" class="btn btn-outline">Contáctame</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/mazsebastian01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/seb_mazv?igsh=dzl3cWZoemdtcnlt&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sebastian-maz-3955b7212/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="../src/images/i-show-speed-meme.png" alt="Foto de Sebastián">
+        </div>
+      </div>
     </section>
 
- <section>
-    <h3 id="Proyectos">Proyectos</h3>
-    <ul><a href="https://www.elheraldo.co/">El Heraldo</a></ul>
-    <ul><a href="https://www.eltiempo.com/">El Tiempo</a></ul>
-    <ul><a href="https://www.nytimes.com/">NY Times</a></ul>
- </section>
+    <section id="Experiencia" class="experiencia">
+      <h2 class="section-title">Experiencia</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2026 - Presente</span>
+            <h3>Developer Junior</h3>
+            <p>Trabajando en proyectos web con HTML, CSS y Python.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2026</span>
+            <h3>Estudiante de Desarrollo Web</h3>
+            <p>Aprendiendo las bases del desarrollo frontend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
- <section>
-    <h3 id="Contacto">Contacto</h3>
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" required>
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" required>
-  <button type="submit">Enviar</button>
-</form>
+    <section id="Proyectos" class="proyectos">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-top">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>PROGRAMACIÓN</h3>
+          <p> Estoy aprendiendo programación, desarrollando habilidades para crear soluciones digitales y entender cómo funcionan los sistemas.</p>
+          <div class="project-links">
+        
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-top">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>MARKETING</h3>
+          <p>Me dedico al marketing, enfocado en estrategias para conectar marcas con personas y generar impacto.</p>
+          <div class="project-links">
+            
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-top">
+           <i class="fa-solid fa-music"></i>
+          </div>
+          <h3>MELÓMANO</h3>
+          <p>Soy melómano y disfruto coleccionar música, explorando distintos géneros y descubriendo nuevos sonidos constantemente.</p>
+          <div class="project-links">
+    
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <form action=""></form>
- </section>
+    <section id="Contacto" class="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="user_name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="mail" name="user_mail" placeholder="tu@correo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="msg">Mensaje</label>
+            <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sebastián Maz · Hecho con <span style="color:var(--primary-color)">🚬🥃 </span></p>
+    <div class="social-links">
+      <a href="https://github.com/mazsebastian01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/seb_mazv?igsh=dzl3cWZoemdtcnlt&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sebastian-maz-3955b7212/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+  
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
 </body>
+
 </html>
